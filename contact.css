@@ -1,0 +1,92 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #343a40;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 9px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #000000f3;
+    color: #fff;
+}
+
+/* Contact Us Section */
+.contact-us {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-us h1 {
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contactForm button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 50px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+.logo img {
+    width: 120px;
+}

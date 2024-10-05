@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOS Burgers - Store Management</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">
+                        <img src="assets/logo-white.png" alt="logo" class="nav__logo-white" />
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="burger-logo-template_441059-18.avif" alt="MOS Burgers Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="store-management.html">Store</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li><a href="customer-management.html">Customers</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Store Management Section -->
+    <main class="store-management">
+        <h1>Store Management</h1>
+
+        <!-- Form to add/update items -->
+        <form id="itemForm">
+            <h2>Add Food Item</h2>
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemPrice" placeholder="Price (LKR)" required>
+            <input type="number" id="itemQuantity" placeholder="Quantity" required>
+            <input type="text" id="itemCode" placeholder="Item Code" required>
+            <input type="url" id="itemImage" placeholder="Image URL" required> <!-- Input for image URL -->
+            <button type="submit">Add Item</button>
+        </form>
+
+        <!-- Table to display items -->
+        <h2>Food Items</h2>
+        <table id="itemTable">
+            <thead>
+                <tr>
+                    <th>Image</th> <!-- New Image Column -->
+                    <th>Item Name</th>
+                    <th>Price (LKR)</th>
+                    <th>Quantity</th>
+                    <th>Item Code</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

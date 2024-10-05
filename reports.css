@@ -1,0 +1,78 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: #343a40;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 9px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #000000f3;
+    color: #fff;
+}
+
+/* Reports Section */
+.reports {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.report-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+.report-section h2 {
+    margin-bottom: 15px;
+}
+
+.report-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.report-section button:hover {
+    background-color: #0056b3;
+}
+
+#monthlySales, #topCustomers, #foodItemTrends {
+    font-size: 18px;
+    margin: 15px 0;
+}
+.logo img {
+    width: 120px;
+}

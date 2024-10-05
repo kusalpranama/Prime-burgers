@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOS Burgers - Reports</title>
+    <link rel="stylesheet" href="reports.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__header">
+                <div class="nav__logo">
+                  <a href="#">
+                    <img src="assets/logo-white.png" alt="logo" class="nav__logo-white" />
+                  </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                  <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="burger-logo-template_441059-18.avif" alt="MOS Burgers Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="store-management.html">Store</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li><a href="customer-management.html">Customers</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reports Section -->
+    <main class="reports">
+        <h1>Business Reports</h1>
+
+        <!-- Monthly Sales Report -->
+        <section class="report-section">
+            <h2>Monthly Sales Report</h2>
+            <p>Total Sales for the month:</p>
+            <div id="monthlySales">LKR 0.00</div>
+            <button id="generateMonthlySales">Generate Report</button>
+        </section>
+
+        <!-- Top Customers Report -->
+        <section class="report-section">
+            <h2>Top Customers</h2>
+            <p>View the top customers based on the number of orders:</p>
+            <ul id="topCustomers">
+                <!-- List of top customers will be generated here -->
+            </ul>
+            <button id="generateTopCustomers">Generate Report</button>
+        </section>
+
+        <!-- Food Item Sales Trends -->
+        <section class="report-section">
+            <h2>Food Item Sales Trends</h2>
+            <p>View the top-selling food items:</p>
+            <ul id="foodItemTrends">
+                <!-- List of top-selling food items will be generated here -->
+            </ul>
+            <button id="generateFoodItemTrends">Generate Report</button>
+        </section>
+    </main>
+
+    <script src="reports.js"></script>
+</body>
+</html>

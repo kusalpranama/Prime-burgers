@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Header styles */
+.header {
+    background-color: #343a40;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 9px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #000000f3;
+    color: #fff;
+}
+
+/* Store Management styles */
+.store-management {
+    padding: 20px;
+}
+
+.store-management h1 {
+    margin-bottom: 20px;
+}
+
+#itemForm {
+    margin-bottom: 20px;
+}
+
+#itemForm input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+#itemForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#itemForm button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.logo img {
+    width: 120px;
+}

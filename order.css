@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Header styles */
+.header {
+    background-color: #343a40;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links li a {
+    font-size: 18px;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 9px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: #000000f3;
+    color: #fff;
+}
+
+/* Order Management styles */
+.order-management {
+    padding: 20px;
+}
+
+.order-management h1 {
+    margin-bottom: 20px;
+}
+
+#orderForm {
+    margin-bottom: 20px;
+}
+
+#orderForm input, #orderForm select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 250px;
+}
+
+#orderForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#orderForm button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.logo img {
+    width: 120px;
+}
+/* Styles for the Place Order Button */
+#placeOrderButton {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745; /* Green color to indicate action */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#placeOrderButton:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+#placeOrderButton:active {
+    transform: scale(1); /* Reset scaling when clicked */
+    background-color: #1e7e34; /* Even darker green when clicked */
+}

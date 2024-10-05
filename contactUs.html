@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MOS Burgers</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__header">
+                <div class="nav__logo">
+                  <a href="#">
+                    <img src="assets/logo-white.png" alt="logo" class="nav__logo-white" />
+                  </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                  <i class="ri-menu-line"></i>
+                </div>
+              </div>
+            <div class="logo">
+                <img src="burger-logo-template_441059-18.avif" alt="MOS Burgers Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="store-management.html">Store</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li><a href="customer-management.html">Customers</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Us Section -->
+    <main class="contact-us">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or feedback, feel free to reach out to us using the form below:</p>
+
+        <!-- Contact Form -->
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p>Email: support@mosburgers.com</p>
+            <p>Phone: +94 11 234 5678</p>
+            <p>Address: 123 Burger Lane, Colombo, Sri Lanka</p>
+        </div>
+    </main>
+
+    <script src="contact.js"></script>
+</body>
+</html>

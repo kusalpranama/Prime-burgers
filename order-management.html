@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOS Burgers - Order Management</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav__header">
+                <div class="nav__logo">
+                  <a href="#">
+                    <img src="assets/logo-white.png" alt="logo" class="nav__logo-white" />
+                  </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                  <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="burger-logo-template_441059-18.avif" alt="MOS Burgers Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="store-management.html">Store</a></li>
+                <li><a href="order-management.html">Orders</a></li>
+                <li><a href="customer-management.html">Customers</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Order Management Section -->
+    <main class="order-management">
+        <h1>Order Management</h1>
+
+        <!-- Form to add orders -->
+        <form id="orderForm">
+            <h2>Add New Order</h2>
+            <input type="text" id="customerName" placeholder="Customer Name" required>
+            <input type="text" id="customerPhone" placeholder="Phone Number" required>
+            <select id="orderItem" required>
+                <option value="">Select Food Item</option>
+                <option value="Classic Burger" data-price="750">Classic Burger - 750 LKR</option>
+                <option value="Turkey Burger" data-price="800">Turkey Burger - 800 LKR</option>
+                <option value="Cheese Burger" data-price="1000">Cheese Burger - 1000 LKR</option>
+                <!-- Add more food items as needed -->
+            </select>
+            <input type="number" id="itemQuantity" placeholder="Quantity" required>
+            <button type="submit">Add to Order</button>
+        </form>
+
+        <h2>Order List</h2>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Food Item</th>
+                    <th>Quantity</th>
+                    <th>Price (LKR)</th>
+                    <th>Total Amount (LKR)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Order rows will be dynamically added here -->
+            </tbody>
+        </table>
+
+        <!-- Place Order button -->
+        <button id="placeOrderButton">Place Order</button>
+    </main>
+
+    <script src="order.js"></script>
+</body>
+</html>
